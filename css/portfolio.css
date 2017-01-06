@@ -374,7 +374,7 @@ footer {
 	color: #ffffff;
 	padding: 1em;
 }
-.mainNav a:hover, .current {
+.mainNav a:hover {
 	color: #b20000;
 
 
