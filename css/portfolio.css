@@ -128,10 +128,17 @@ hr {
     color: #ffffff;
 }
 
+.about-section h4 {
+    text-decoration: underline;
+    font-size: 1.7em;
+    font-family: 'Lora', Serif;
+}
+
 .about-section p {
     width: 90%;
     font-family: 'Lemonada', cursive;
 	text-indent: 2.5em;
+	color: #e5e5e5;
 }
 
 .about-section a {
