@@ -1,68 +1,28 @@
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/apple-692186_1280.jpg) center center no-repeat fixed;
-    background-size: cover; 
-    margin: 0;          
-    }
+	margin: 0;
+}
 
 section {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-}
-
-/****************************************************************************************************************************
-                                        Header Styles
-*****************************************************************************************************************************/
-
-.head-section {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-header {
-    width: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
- h1 {
-    font-family: 'Croissant One', cursive;
-	color: white;
-	font-size: 3rem;
-}
-
-.intro-y {
-	color: #b20000;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
 }
 
 h3 {
-	font-family: 'Lora', serif;
-	font-size: 2em;
-	color: white;
+	text-decoration: underline;
+	font-family: 'Playfair Display', serif;
 }
 
-hr {
-    width: 70%;
-    background-color: #ffffff;
+p {
+	font-family: 'Open Sans', sans-serif;
 }
 
 /****************************************************************************************************************************
-                                        Nav Styles
+										Nav Styles
 *****************************************************************************************************************************/
 
 .mainNav {
@@ -79,7 +39,7 @@ hr {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-    margin-bottom: 0;
+	margin-bottom: 0;
 
 }
 
@@ -118,181 +78,344 @@ hr {
 	display: flex;
 }
 
-/****************************************************************************************************************************
-                                        About Styles
-*****************************************************************************************************************************/
-.about-section {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: #ffffff;
-}
-
-.about-section h4 {
-    text-decoration: underline;
-    font-size: 1.7em;
-    font-family: 'Lora', Serif;
-}
-
-.about-section p {
-    width: 90%;
-    font-family: 'Lemonada', cursive;
-	text-indent: 2.5em;
-	color: #e5e5e5;
-}
-
-.about-section a {
-    color: #bd081c
-}
-
-.about-section a:hover {
-    color: #b20000;
-}
 
 /****************************************************************************************************************************
-                                        Offer Styles
-*****************************************************************************************************************************/
-/*
-.offerings {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.offer-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 200px;
-    border: 2px solid #000000;
-    margin-bottom: 1em;
-}
-*/
-/****************************************************************************************************************************
-                                        Portfolio Styles
+										Header Styles
 *****************************************************************************************************************************/
 
-.portfolio-section {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+.head-section {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/apple-692186_1280.jpg) center center no-repeat fixed;
+	background-size: cover; 
+	display: -webkit-flex; 
+	display: -ms-flexbox; 
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
-.portfolio-section h3 {
-    color: #ffffff;
-}
-
-.portfolio-content {
+header {
+	width: 100%;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-    width: 100%;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
-.folio {
-	width: 300px;
-	height: 300px;
-	border: 2px solid #000000;
-	margin-bottom: 1em;
-	position: relative;
-	text-align: center;
+ h1 {
+	font-family: 'Croissant One', cursive;
+	color: white;
+	font-size: 3.5em;
 }
 
-
-.folio .info {
-	width: 300px;
-	height: 300px;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	opacity: 1;
+.intro-y {
+	color: #b20000;
 }
 
-.folio img {
-	display: block;
-	position: relative;
-	max-width: 100%;
-	height: 300px;
-}
-
-.folio h2 {
-    font-family: 'Lemonada', cursive;
-	color: #ffffff;
-	text-align: center;
-	position: relative;
-	top: 50px;
-	font-size: 1.2em;
-	padding: 10px;
-	opacity: 1;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.folio h2, .folio p {
-    background: rgba(0, 0, 0, 0.8);
-    margin: 0;
-}
-
-.folio p {
-	font-family: 'Lemonada', cursive;
-	font-size: .7em;
-	position: relative;
-	top: 50px;
-	color: #ffffff;
-	padding: 1em;
-	text-align: center;
-	opacity: 1;
-}
-
-.folio a.view {
-	display: inline-block;
+header h2 {
+	font-family: 'Lora', serif;
+	font-size: 2em;
+	color: white;
 	text-decoration: none;
-	position: relative;
-	top: 70px;
-	padding: 7px 14px;
-	background: #000000;
-	color: #fff;
-	opacity: 1;
 }
 
 /****************************************************************************************************************************
-                                        Contact Styles
+										About Styles
+*****************************************************************************************************************************/
+.about-section {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.ab-me-container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 90%;
+}
+
+.ab-img {
+	width: 260px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.ab-img img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.about-me {
+	width: 100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.about-me p {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+	text-indent: 1.5em;
+}
+
+.about-me a {
+	color: #bd081c;
+}
+
+/****************************************************************************************************************************
+										Skills Styles
+*****************************************************************************************************************************/
+
+.skill-section {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/apple-692186_1280.jpg) center center no-repeat fixed;
+	background-size: cover; 
+}
+
+.skill-section h3 {
+	color: #ffffff;
+	text-align: center;
+}
+
+.skills {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.skills h4 {
+	color: #ffffff;
+	font-size: 1.3em;
+}
+
+.cont {
+	width: 100%; 
+}
+
+.cur-cont, .learn-cont, .fut-cont {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.current, .learning, .future {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 1em;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+}
+
+.current p, .learning p, .future p {
+	text-align: center;
+	font-size: .9em;
+}
+
+.current .circle, .learning .circle, .future .circle {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #b20000;
+	border-radius: 50%;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+.current .inner-circle, .learning .inner-circle, .future .inner-circle {
+	width: 80px;
+	height: 80px;
+	border: 1px solid red;
+	border-radius: 50%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.classes p {
+	margin-top: 2em;
+	text-align: center;
+}
+
+/****************************************************************************************************************************
+										Portfolio Styles
+*****************************************************************************************************************************/
+.portfolio-section {
+	background-color: #ffffff; 
+}
+
+.portfolio-section h3 {
+	color: #1c1c1c;
+	text-align: center;
+}
+
+.port-container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.portfolio {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.port {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.port h4 {
+	color: black;
+	font-size: 1.5em;
+}
+
+.img-cont {
+	 width: 300px;
+	 height: 300px;
+	 border: 2px solid #000000;
+}
+
+.img-cont img {
+	max-width: 100%;
+	height: auto;
+}
+
+.port p {
+	width: 90%;
+}
+
+.more p {
+	width: 50%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/****************************************************************************************************************************
+										Contact Styles
 *****************************************************************************************************************************/
 
 .contact-section {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/apple-692186_1280.jpg) center center no-repeat fixed;
+	background-size: cover; 
 }
 
+.contact-section h3 {
+	color: #ffffff;
+}
 
 .contact-email {
-    color: red;
-    text-decoration: none;
-    margin-bottom: 1em;
+	color: red;
+	text-decoration: none;
+	margin-bottom: 1em;
 }
 
 
 .contact-info {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .social-sect {
@@ -326,77 +449,250 @@ hr {
 }
 
 /****************************************************************************************************************************
-                                        Footer Styles
+										Footer Styles
 *****************************************************************************************************************************/
 
 footer {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-/****************************************************************************************************************************
-                                        Media Queries
-*****************************************************************************************************************************/
-
-/****************************************************************************************************************************
-                                        Nav Media Query Styles
-*****************************************************************************************************************************/
-
-@media screen and (min-width: 1024px) {
-
-
-    .menu-toggle {
-        display: none;
-    }
-
-    .mainNav {
-	background-color: transparent;
-	height: 2.5em;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-	font-size: 1.2rem;
-
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
-.mainNav a {
-	text-decoration: none;
-	color: #ffffff;
-	padding: 1em;
-}
-.mainNav a:hover {
-	color: #b20000;
-
-
-    .about-section p {
-        width: 60%;
-    }
-
-    .portfolio-content {
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+footer p {
+	color: #000000;
 }
 
+/****************************************************************************************************************************
+										Media Queries
+*****************************************************************************************************************************/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 558px) {
 
+	/*-------------------------------------------------------
+				About Styles
+	-------------------------------------------------------*/
+
+	.ab-p {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.ab-img {
+		width: 300px;
+	}
+
+	.about-me p {
+		width: 100%;
+	}
+
+	.img-cont {
+		width: 500px;
+		height: 400px;
+	}
+
+	/*-------------------------------------------------------
+				Portfolio Styles
+-------------------------------------------------------*/
+
+	.port {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+		.port p {
+			width: 70%;
+		}
+}
+@media screen and (min-width: 1024px) {
+
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.mainNav {
+		height: 2.5em;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: flex-end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		font-size: 1.2rem;
+		background-color: #000000;
+	}
+
+	.mainNav a {
+		text-decoration: none;
+		color: #ffffff;
+		padding: 1em;
+	}
+
+	a:hover {
+		color: #bd081c;
+	}
+
+	h1 {
+		font-size: 6em;
+	}
+
+	h3 {
+		font-size: 2em;
+	}
+
+	header {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	 }
+
+
+	/*-------------------------------------------------------
+				About Styles
+	-------------------------------------------------------*/
+
+	
+
+	.about-section p {
+		width: 60%;
+	}
+
+	.about-me:first-of-type {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.about-me:first-of-type p {
+		width: 100%;
+	}
+
+	.content {
+		width: 50%;
+		margin: 1em;
+	}
+
+	.ab-img {
+		width: 69.4%;
+		margin-left: 3em;
+	}
+
+	 /*-------------------------------------------------------
+				Skills Media Query Styles
+	 -------------------------------------------------------*/
+
+	.skills {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.current, .learning, .future {
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+
+	.img-cont {
+		width: 500px;
+	}
+
+
+
+	 /*-------------------------------------------------------
+				Portfolio Media Query Styles
+	 -------------------------------------------------------*/
+
+	.portfolio-section h3 {
+		color: #1c1c1c;
+	}
+
+	.portfolio-content {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		width: 75%;
+	}
+
+	 .img-cont {
+		 width: 500px;
+	 }
+
+	 .port {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	 }
+
+	 .port p {
+		width: 70%;
+	 }
+
+	.port-container {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	  .portfolio {
+		width: 50%;
+	}
+
+	.folio {
+		width: 30%;
+		height: 300px;
+		margin: 1em;
+	}
+
+
+	.folio .info {
+		width: 100%;
+		height: 300px;
+	}
+
+	.folio img {
+		max-width: 100%;
+		height: 300px;
+	}
+
+	.more {
+		width: 20%;
+		-webkit-align-self: center;
+		-ms-flex-item-align: center;
+		-ms-grid-row-align: center;
+		align-self: center;
+	}
 /*****************************************
-		Social Media Styles
+		Social Media Query Styles
 *****************************************/
 	.fa-twitter:hover {
 		color: #0099e5;
@@ -414,66 +710,15 @@ footer {
 		border: 2px solid #3b5998;
 	}
 
-     h1 {
-        font-size: 5em;
-    }
+	.social {
+		border: 2px solid #ffffff;
+	}
 
-    h3 {
-        font-size: 2em;
-    }
+	.social i {
+		color: #ffffff;
+	}
 
-    header {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-     }
-
-    .about-section {
-        background: transparent;
-    }
-
-    .about-section p {
-        width: 60%;
-    }
-
-    .portfolio-section h3 {
-    color: #ffffff;
-}
-
-    .portfolio-content {
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        width: 75%;
-    }
-
-    .folio {
-        width: 30%;
-        height: 300px;
-        margin: 1em;
-    }
-
-
-    .folio .info {
-        width: 100%;
-        height: 300px;
-    }
-
-    .folio img {
-        max-width: 100%;
-        height: 300px;
-    }
-
-
-    .social {
-        border: 2px solid #ffffff;
-    }
-
-    .social i {
-        color: #ffffff;
-    }
-
-    footer {
-        color: #ffffff;
-    }
+	footer {
+		color: #ffffff;
+	}
 }
