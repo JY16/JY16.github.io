@@ -355,7 +355,7 @@ header h2 {
 }
 
 .port h4 {
-	color: black;
+	color: #1c1c1c;
 	font-size: 1.5em;
 }
 
@@ -372,6 +372,10 @@ header h2 {
 
 .port p {
 	width: 90%;
+}
+
+.portfolio a {
+	color: #1c1c1c;
 }
 
 .more p {
