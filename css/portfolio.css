@@ -26,7 +26,7 @@ p {
 *****************************************************************************************************************************/
 
 .mainNav {
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgba(0, 0, 0, 0.6);
 	height: 40vh;
 	display: none;
 	-webkit-flex-direction: column;
@@ -65,8 +65,8 @@ p {
 .menu-toggle {
 	padding: 10px;
 	margin: 5px;
-	background-color:#b20000;
-	color: white;
+	background-color: #b20000;
+	color: #e6e6e6;
 	border: none;
 	font-size: 1em;
 	font-family: 'Raleway', sans-serif;
@@ -85,9 +85,9 @@ p {
 
 .head-section {
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/apple-692186_1280.jpg) center center no-repeat fixed;
-	background-size: cover; 
-	display: -webkit-flex; 
-	display: -ms-flexbox; 
+	background-size: cover;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
@@ -117,7 +117,7 @@ header {
 	align-items: center;
 }
 
- h1 {
+h1 {
 	font-family: 'Croissant One', cursive;
 	color: white;
 	font-size: 3.5em;
@@ -159,13 +159,11 @@ header h2 {
 .ab-img {
 	width: 260px;
 	height: 300px;
-	border-radius: 50%;
 }
 
 .ab-img img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 50%;
 }
 
 .about-me {
@@ -203,7 +201,7 @@ header h2 {
 	align-items: center;
 	color: white;
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/apple-692186_1280.jpg) center center no-repeat fixed;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .skill-section h3 {
@@ -233,7 +231,7 @@ header h2 {
 }
 
 .cont {
-	width: 100%; 
+	width: 100%;
 }
 
 .cur-cont, .learn-cont, .fut-cont {
@@ -262,7 +260,7 @@ header h2 {
 	margin-bottom: 1em;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 }
 
 .current p, .learning p, .future p {
@@ -313,7 +311,10 @@ header h2 {
 										Portfolio Styles
 *****************************************************************************************************************************/
 .portfolio-section {
-	background-color: #ffffff; 
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .portfolio-section h3 {
@@ -321,67 +322,31 @@ header h2 {
 	text-align: center;
 }
 
-.port-container {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-}
-
-.portfolio {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
-.port {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
-.port h4 {
+.portfolio h4 {
 	color: #1c1c1c;
 	font-size: 1.5em;
 }
 
-.img-cont {
-	 width: 300px;
-	 height: 300px;
-	 border: 2px solid #000000;
-}
-
-.img-cont img {
-	max-width: 100%;
-	height: auto;
-}
-
-.port p {
+.port-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 90%;
+	justify-content: space-between;
+}
+
+.portfolio {
+	margin-bottom: 1em;
+	text-align: center;
+	border-bottom: 1px solid #000000;
+}
+
+.img-cont {
+	height: auto;
 }
 
 .portfolio a {
 	color: #1c1c1c;
-}
-
-.more p {
-	width: 50%;
-	font-weight: bold;
-	text-decoration: underline;
 }
 
 /****************************************************************************************************************************
@@ -393,7 +358,7 @@ header h2 {
 	-ms-flex-align: center;
 	align-items: center;
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/apple-692186_1280.jpg) center center no-repeat fixed;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .contact-section h3 {
@@ -476,8 +441,8 @@ footer p {
 @media screen and (min-width: 558px) {
 
 	/*-------------------------------------------------------
-				About Styles
-	-------------------------------------------------------*/
+                About Styles
+    -------------------------------------------------------*/
 
 	.ab-p {
 		display: -webkit-flex;
@@ -499,31 +464,17 @@ footer p {
 		width: 100%;
 	}
 
-	.img-cont {
-		width: 500px;
-		height: 400px;
-	}
-
 	/*-------------------------------------------------------
-				Portfolio Styles
+                Portfolio Styles
 -------------------------------------------------------*/
 
-	.port {
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-	}
 
-		.port p {
-			width: 70%;
-		}
 }
+
+@media screen and (min-width: 840px) {
+
+}
+
 @media screen and (min-width: 1024px) {
 
 
@@ -568,14 +519,14 @@ footer p {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
-	 }
+	}
 
 
 	/*-------------------------------------------------------
-				About Styles
-	-------------------------------------------------------*/
+                About Styles
+    -------------------------------------------------------*/
 
-	
+
 
 	.about-section p {
 		width: 60%;
@@ -604,9 +555,17 @@ footer p {
 		margin-left: 3em;
 	}
 
-	 /*-------------------------------------------------------
-				Skills Media Query Styles
-	 -------------------------------------------------------*/
+	.about-me:last-of-type {
+	}
+
+	.about-me:last-of-type p {
+		align-self: flex-start;
+		margin-left: 10em;
+	}
+
+	/*-------------------------------------------------------
+               Skills Media Query Styles
+    -------------------------------------------------------*/
 
 	.skills {
 		-webkit-flex-direction: row;
@@ -626,78 +585,26 @@ footer p {
 
 
 
-	 /*-------------------------------------------------------
-				Portfolio Media Query Styles
-	 -------------------------------------------------------*/
+	/*-------------------------------------------------------
+               Portfolio Media Query Styles
+    -------------------------------------------------------*/
 
-	.portfolio-section h3 {
-		color: #1c1c1c;
-	}
-
-	.portfolio-content {
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		width: 75%;
-	}
-
-	 .img-cont {
-		 width: 500px;
-	 }
-
-	 .port {
-		display: -webkit-flex;
-		display: -ms-flexbox;
+	.portfolio {
 		display: flex;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-	 }
-
-	 .port p {
-		width: 70%;
-	 }
-
-	.port-container {
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
 		flex-direction: row;
+		align-items: center;
+		text-align: center;
 	}
 
-	  .portfolio {
-		width: 50%;
+	.port-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
-
-	.folio {
-		width: 30%;
-		height: 300px;
-		margin: 1em;
-	}
-
-
-	.folio .info {
-		width: 100%;
-		height: 300px;
-	}
-
-	.folio img {
-		max-width: 100%;
-		height: 300px;
-	}
-
-	.more {
-		width: 20%;
-		-webkit-align-self: center;
-		-ms-flex-item-align: center;
-		-ms-grid-row-align: center;
-		align-self: center;
-	}
-/*****************************************
-		Social Media Query Styles
-*****************************************/
+	/*****************************************
+            Social Media Query Styles
+    *****************************************/
 	.fa-twitter:hover {
 		color: #0099e5;
 	}
@@ -724,5 +631,15 @@ footer p {
 
 	footer {
 		color: #ffffff;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	/*-------------------------------------------------------
+                   Portfolio Media Query Styles
+        -------------------------------------------------------*/
+	.port-container {
+		width: 70%;
 	}
 }
