@@ -148,7 +148,7 @@ p {
 										About Styles
 *****************************************************************************************************************************/
 header {
-    background:  url(.../images/graphic-design-studio-1563080_1920.jpg) center center no-repeat fixed;
+    background:  url(/images/graphic-design-studio-1563080_1920.jpg) center center no-repeat fixed;
     background-size: cover;
     min-height: 50vh;
     width: 100%;
