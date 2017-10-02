@@ -3,548 +3,614 @@ body {
     padding: 0;
 }
 
-section {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
+/***********************************************************************************************************************
+Global Styles
+***********************************************************************************************************************/
+.portfolio, .contact {
+    margin-bottom: -1.1em;
 }
 
-p, h2, h3 {
-    font-family: 'Crimson Text', serif;
+.portfolio {
+    margin-bottom: -1.2em;
 }
 
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: underline;
-    font-weight: normal;
+h3, p, a, li {
+    font-family: 'Lato', sans-serif;
+    color: #e6e6e6;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #e6e6e6;
+    transition: color .3s ease-in-out;
+}
+
+a:hover {
+    color: #880001;
 }
 
 p {
-    font-size: 1.2rem;
+    line-height: 1.9;
 }
 
-.button {/* was just button; move to top for global button styles */
-    width: 90%;
-    padding: 16px 25px;
-    border-radius: 5px;
-    border: none;
-    background-color: #b20000;
-    margin-bottom: .5em;
-    color: #fff;
-    font-size: .9em;
-    transition: all .5s ease-in-out;
-}
-
-/****************************************************************************************************************************
-										Nav Styles
-*****************************************************************************************************************************/
-
-.fixed-nav {
-    position: fixed;
-    width: 100%;
-}
-
-.mainNav {
-    background-color: rgba(178, 0, 0, 0.9);
-    height: 40vh;
-    display: none;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
+/***********************************************************************************************************************
+Top Container Styles
+***********************************************************************************************************************/
+.top-container {
+    display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 0;
-
+    align-self: flex-end;
+    width: 100%;
+    min-height: 2.7em;
+    position: fixed;
+    z-index: 1;
+    background-color: #131519;
 }
 
-.mainNav a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 5px;
-    transition: all .5s ease-in-out;
-}
-
-.mainNav a:hover {
-    color: #0e647d;
-}
-
+/*****Navigation Styles******
+****************************/
 .nav-button {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    background-color: #000;
+    position: fixed;
+    align-self: flex-end;
+    margin-bottom: 2em;
 }
 
-.menu-toggle {
-    padding: 10px;
-    margin: 5px;
-    background-color: #b20000;
+.nav-button button {
+    background-color: #710001;
+
     color: #e6e6e6;
+    padding: 10px 15px;
     border: none;
-    font-size: 1em;
+    cursor: pointer;
+    margin-right: 1em;
+    margin-top: .2em;
 }
 
-.open nav {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+.nav-button button:hover {
+    background-color: #880001;
 }
-/*--------------------------------------------------
-			    Nav Contact Styles
----------------------------------------------------*/
+
+nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.5em 1em 0 0;
+}
+
+nav a {
+    margin-bottom: .5em;
+}
+
+.current {
+    color: #710001;
+}
+
+/***********************************************************************************************************************
+Header Styles
+***********************************************************************************************************************/
+header {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/workplace-2341642_1920.jpg") center center no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Alice', serif;
+    font-size: 3.5em;
+    color: #e6e6e6;
+}
+
+header p {
+    font-size: 1.3em;
+    color: #e6e6e6;
+}
+
+/***********************************************************************************************************************
+About Styles
+***********************************************************************************************************************/
+.about {
+    background-color: #131519;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.about-wrapper {
+    width: 90%;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.about-section p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.about-image {
+    display: none;
+}
+
+.learning-list {
+    display: none;
+}
+
+/***********************************************************************************************************************
+Portfolio Styles
+***********************************************************************************************************************/
+.portfolio {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #131519;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-slider {
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    position: relative;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.project-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+.project {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
+    perspective: 300px;
+}
+
+.inspire {
+    background: url("../images/project-images/inspire-small.png") center center no-repeat;
+    background-size: cover;
+}
+
+.lorem {
+    background: url("../images/project-images/lorem-small.png") center center no-repeat;
+    background-size: cover;
+}
+
+.thegallery {
+    background: url("../images/project-images/thegallery-small.png") center center no-repeat;
+    background-size: cover;
+}
+
+.portfolio-project {
+    background: url("../images/project-images/portfolio-small.png") center center no-repeat;
+    background-size: cover;
+}
+
+.sweetbakery {
+    background: url("../images/project-images/sweetbakery-small.png") center center no-repeat;
+    background-size: cover;
+}
+
+.foodjoy {
+    background: url("../images/project-images/foodjoy-small.png") center center no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(90deg);
+    transform-origin: center bottom;
+    opacity: 0;
+}
+
+.project p {
+    display: block;
+    padding: 0 20px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 1.3em;
+}
+
+.project:hover .overlay {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+/* Portfolio Section: Work Container */
+
+.full-project-container {
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.full-project-container img {
+    max-width: 100%;
+}
+
+h4 {
+    color: #ccc;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 1em;
+}
+
+.back {
+    color: #ccc;
+    opacity: .5;
+}
+
+.back:hover {
+    opacity: 1;
+}
+
+/*******************************************
+            Project Load Styles
+********************************************/
+.project-load {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    width: 90%;
+    text-align: center;
+}
+
+.project-load p:first-of-type {
+    align-self: flex-start;
+}
+
+.project-link {
+    text-decoration: underline;
+}
+
+.full-project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.small-image-container {
+    width: 90%;
+}
+
+.image-container {
+    width: 90%;
+}
+
+/***********************************************************************************************************************
+Contact Styles
+***********************************************************************************************************************/
+.contact {
+    background-color: #131519;
+}
+
 .social-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1.5em;
+    padding-top: .5em;
 }
 
-.social {
+.social-info .social {
     width: 40px;
     height: 40px;
-    border: 2px solid #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: .5em;
-    transition: all .5s ease-in-out;
+    border: 2px solid #e6e6e6;
+    transition: all 0.3s ease-in-out;
 }
 
-.social i {
-    color: #fff;
-    transition: all .5s ease-in-out;
+.social-info .social:last-of-type {
+    margin-right: 0;
 }
 
-.social:hover i {
-    color: #0e647d;
+.social-info .social i {
+    color: #e6e6e6;
+    transition: all 0.3s ease-in-out;
 }
 
-.social:hover {
-    border: 2px solid #0e647d;
+.social-info .social:hover i {
+    color: #710001;
 }
 
+.social-info .social:hover {
+    border: 2px solid #710001;
+}
 
-/****************************************************************************************************************************
-										About Styles
-*****************************************************************************************************************************/
-header {
-    background:  url(/images/graphic-design-studio-1563080_1920.jpg) center center no-repeat fixed;
-    background-size: cover;
-    min-height: 50vh;
-    width: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+.email {
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-}
-
-h1 {
-    font-family: 'Lora', serif;
-    color: white;
-    font-size: 4rem;
-}
-
-.intro-y {
-    color: #b20000;
-}
-
-header h1, p {
-    margin: 0;
-}
-
-header p {
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-}
-
-/****************************************************************************************************************************
-										About Styles
-*****************************************************************************************************************************/
-
-.about-section {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.content {
-    width: 100%;
-}
-
-.content p {
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    text-indent: 1.5em;
-    line-height: 1.9;
-}
-
-/*------------------------------------------
-            Random Facts Styles
--------------------------------------------*/
-
-.random-facts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    border: 2px solid #000000;
-    text-align: center;
-    background-color: #fff;
     margin-top: .5em;
-    margin-bottom: .5em;
 }
 
-.random-facts h3 {
-    border-bottom: 1px solid #000;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    font-weight: normal;
+.email a {
+    color: #e6e6e6;
+    font-size: 1.3em;
+    margin-top: .5em;
+    padding: .5em;
 }
 
-.random-facts p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+.email a:hover {
+    color: #710001;
 }
 
-.random-facts .button {
-    width: 50%;
+/***********************************************************************************************************************
+Footer Styles
+***********************************************************************************************************************/
+footer {
+    background-color: #710001;
+    margin-bottom: -1em;
+
 }
-
-.button:hover, .button:active {
-    background-color: #0e647d;
-}
-
-.button:focus {
-    outline: none;
-}
-
-.more-content {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-}
-
-/****************************************************************************************************************************
-										Portfolio Styles
-*****************************************************************************************************************************/
-
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.website {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1em;
-}
-
-hr {
-    width: 50%;
-    height: 1px;
-    background-color: #000;
-}
-
-.img-container {
-    border: 1px solid #000;
-    width: 90%;
-    height: 250px;
-    margin: 0 auto;
-}
-
-.img-container img {
-    max-width: 100%;
-    height: 100%;
-}
-
-.info {
-    border: none;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.info h3 {
-    text-align: center;
-}
-
-.info h3 a {
-    color: #b20000;
-    transition: color .5s ease-in-out;
-}
-
-.info h3 a:hover {
-    color: #0e647d;
-}
-
-/****************************************************************************************************************************
-										Contact Styles
-*****************************************************************************************************************************/
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 1em;
-}
-
-.contact-info p {
-    font-size: 1.5em;
-}
-
-.contact-info a {
-    color: #b20000;
-    text-decoration: none;
-    transition: all .5s ease-in-out;
-}
-
-.contact-info a:hover {
-    color: #0e647d;
-    text-decoration: underline;
-}
-
-/****************************************************************************************************************************
-										Footer Styles
-*****************************************************************************************************************************/
 
 footer p {
-    color: #fff;
-    background-color: #b20000;
-    text-align: center;
+    text-align: left;
+    margin-left: .3em;
 }
+/***********************************************************************************************************************
+Media Queries
+***********************************************************************************************************************/
 
-/****************************************************************************************************************************
-										Media Queries
-*****************************************************************************************************************************/
+@media (min-width: 416px) {
 
-@media screen and (min-width: 569px) {
-/*-------------------------------------------------------
-      Portfolio Media Query Styles: min-width: 569px
--------------------------------------------------------*/
-    .img-container {
-        width: 60%;
-    }
-}
 
-@media screen and (min-width: 638px) {
+    /*****Portfolio Media Query**
+    ****************************/
 
-/*-------------------------------------------------------
-        About Media Query Styles: min-width: 638px
--------------------------------------------------------*/
-
-    .random-facts {
+    .projects {
         width: 50%;
     }
 
-/*-------------------------------------------------------
-       Portfolio Media Query Styles: min-width: 638px
--------------------------------------------------------*/
-    .img-container {
-        width: 60%;
+    .project {
+        width: 80%;
     }
-    .info {
+
+    .small-image-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 500px) {
+
+
+    /*****Portfolio Media Query**
+    ****************************/
+    .image-container {
         width: 70%;
     }
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 600px) {
+    /*****Portfolio Media Query******
+    ************************** */
 
-/*-------------------------------------------------------
-        About Media Query Styles: min-width: 800px
--------------------------------------------------------*/
-
-    .random-facts {
-        width: 40%;
+    .project-boxes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-/*-------------------------------------------------------
-       Portfolio Media Query Styles: min-width: 800px
--------------------------------------------------------*/
-    .img-container {
+    .projects {
         width: 50%;
     }
 
-/*-------------------------------------------------------
-      Contact Media Query Styles: min-width: 800px
--------------------------------------------------------*/
-
-    .contact-info {
-        flex-direction: row;
+    .project {
+        width: 40%;
     }
 
-    .contact-info p {
-        margin: 1em;
+    .small-image-container {
+        width: 60%;
     }
-
 }
 
-@media screen and (min-width: 1024px) {
 
-    h1 {
-        font-size: 6em;
+@media (min-width: 750px) {
+    /*****Portfolio Media Query******
+    ************************** */
+
+    .project-boxes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-/*-------------------------------------------------------
-       Nav Media Query Styles: min-width: 1024px
--------------------------------------------------------*/
+    .projects {
+        width: 50%;
+    }
 
-    .menu-toggle {
+    .project {
+        width: 40%;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+
+    .project-load p {
+        width: 60%;
+    }
+
+    .small-image-container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+
+    /*****Portfolio Media Query******
+    ************************** */
+
+    .project-container {
+        width: 100%;
+    }
+
+    .project-boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project {
+        width: 30%;
+    }
+
+    .small-image-container {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*****Top Container Media Query******
+    ************************************/
+    .top-container {
+        justify-content: center;
+        background-color: #131519;
+        min-height: 3.5em;
+    }
+
+    .nav-button {
         display: none;
     }
 
-    .right {
-        margin-right: auto;
-    }
-
-    .social:first-of-type {
-        margin-left: .3em;
-    }
-
-    .social {
-        border: 2px solid #b20000;
-    }
-
-    .social i {
-        color: #b20000;
-    }
-
-    .social:hover i {
-        color: #0e647d;
-    }
-
-    .social:hover {
-        border: 2px solid #0e647d;
-    }
-
-
-    .mainNav {
-        height: 2.5em;
-        display: -webkit-flex;
-        display: -ms-flexbox;
+    nav {
         display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        font-size: 1.2rem;
-        background-color: #000000;
-    }
-
-    .mainNav a {
-        text-decoration: none;
-        color: #ffffff;
-        padding: 1em;
-    }
-
-    .mainNav a:hover {
-        color: #b20000;
-    }
-
-
-    /*-------------------------------------------------------
-         About Media Query Styles: min-width: 1024px
-    -------------------------------------------------------*/
-    .about-section {
-        width: 100%;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        margin: 0;
     }
 
-    .content {
-        width: 50%;
-        margin: 1em;
+    nav a {
+        margin-bottom: 0;
+        margin-left: .5em;
     }
 
-    .random-facts {
-        margin-left: 1em;
+    nav a:last-of-type {
+        margin-right: .5em;
     }
 
-/*-------------------------------------------------
-  Portfolio Media Query Styles: min-width: 1024px
---------------------------------------------------*/
-    .website {
+    /*****Header Media Query******
+    ****************************/
+    header {
+        min-height: 70vh;
+    }
+
+    /*****About Media Query******
+    ****************************/
+    .about-wrapper {
+        width: 100%;
+        display: flex;
         flex-direction: row;
     }
 
-    .img-container {
-        width: 40%;
-    }
-
-    .info {
-        width: 40%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-/*--------------------------------------------
- About Media Query Styles: min-width: 1200px
----------------------------------------------*/
-
-    .content {
+    .about-section {
         width: 50%;
+        min-height: 100vh;
     }
 
-    .random-facts {
-        width: 25%;
+    .about-me p {
+        width: 90%;
+        text-align: center;
     }
 
-/*-----------------------------------------------
-Portfolio Media Query Styles: min-width: 1200px
-------------------------------------------------*/
-    .img-container {
+    .about-image {
+        display: flex;
+    }
+
+    .about-image-container {
+        width: 100%;
+        height: 100%;
+        background: url("../images/apple-791323_640.jpg") center center no-repeat fixed;
+        background-size: cover;
+    }
+
+    .about-section:first-of-type {
+        border-right: 1px solid white;
+    }
+
+    /*****Portfolio Media Query******
+    ********************************/
+    .project-boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .project {
         width: 30%;
+        height: 170px;
+        margin: .5em .5em 0 0;
+    }
+
+    .small-image-container {
+        width: 31%;
     }
 }
