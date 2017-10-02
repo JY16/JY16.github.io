@@ -1,114 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jamie Y</title>
-    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lora" rel="stylesheet">
-    <link href="css/portfolio.css" rel="stylesheet" >
-</head>
-<body>
-    <div class="container">
-        <div class="fixed-nav">
-            <div class="nav-button">
-                <button class="menu-toggle">Menu</button>
-            </div><!--nav-button-->
-            <nav class="mainNav ">
-                <div class="social-info right">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jamie Y: My Portfolio</title>
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Alice|Lato" rel="stylesheet">
+        <link href="css/portfolio.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-container">
+                <div class="nav-button">
+                    <button class="menu-toggle">Menu</button>
+                </div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <header id="home">
+                <h1>Jamie Y</h1>
+                <p>Developer. Thinker. Learner</p>
+            </header>
+            <section id="about" class="about">
+                <div class="about-wrapper">
+                    <div class="about-section about-image">
+                        <div class="about-image-container"></div>
+                    </div><!--.about-section .about-me-->
+                    <div class="about-section about-me">
+                        <h3>About Me</h3>
+                        <p>
+                            I am a Front-end Developer. I make responsive, mobile-friendly websites. I have been making
+                            websites and learning web development for a few years. Here is a list of my current skills:
+                        </p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Web Design</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Sass</li>
+                        </ul>
+                        <p>
+                            I am continuously learning and striving to learn and develop new skills. To see what I am
+                            learning now, click the button below.
+                        </p>
+                        <div class="learning">
+                            <a class="learning-button" href="#">What am I learning?</a>
+                        </div>
+                        <ul class="learning-list">
+                            <li>React</li>
+                            <li>Databases</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                        </ul>
+                    </div><!--.about-section .about-me-->
+                </div><!--.about-wrapper-->
+            </section>
+            <section id="portfolio" class="portfolio">
+                <h3>Portfolio</h3>
+                <div class="portfolio-slider">
+                    <div class="project-container projects">
+                        <div class="project-boxes">
+
+                            <a class="project inspire" href="inspire.html">
+                                <div class="overlay">
+                                    <p>Inspire</p>
+                                </div>
+                            </a>
+
+                            <a class="project thegallery" href="thegallery.html">
+                                <div class="overlay">
+                                    <p>The Gallery</p>
+                                </div>
+                            </a>
+
+                            <a class="project lorem" href="lorem.html">
+                                <div class="overlay">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </a>
+
+                            <a class="project portfolio-project" href="portfolio.html">
+                                <div class="overlay">
+                                    <p>Jamie Y</p>
+                                </div>
+                            </a>
+
+                            <a class="project sweetbakery" href="sweetbakery.html">
+                                <div class="overlay">
+                                    <p>Sweet Bakery</p>
+                                </div>
+                            </a>
+
+                            <a class="project foodjoy" href="foodjoy.html">
+                                <div class="overlay">
+                                    <p>FoodJoy</p>
+                                </div>
+                            </a>
+
+                        </div><!--thumbnail-container-->
+                    </div><!--.thumb-wrap-->
+
+                    <div class="project-container">
+                        <div class="full-project-container">
+                            <a class="back" href="#portfolio">Back</a>
+                            <h4 class="project-title">Project Title</h4>
+                            <div class="project-load"></div>
+                        </div><!--work-container-->
+                    </div><!--.work-wrap-->
+
+                </div><!--.portfolio-slider-->
+            </section>
+            <section id="contact" class="contact">
+                <h3>Contact</h3>
+                <div class="social-info">
                     <div class="social"><a href="https://twitter.com/jamey_ya"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
                     <div class="social"><a href="http://www.linkedin.com/in/jamie-y-936539121"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
-                    <div class="social"><a href="mailto:email@email.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
-                    <div class="social"><a href="http://codepen.io/jy16/"><i class="fa fa-codepen" aria-hidden="true"></i></a></div>
                     <div class="social"><a href="https://github.com/JY16"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-                </div><!--.social-info-->
-                <a class="list-item" href="#about">About</a>
-                <a class="list-item" href="#portfolio">Portfolio</a>
-                <a class="list-item" href="#contact">Contact</a>
-            </nav><!--mainNav-->
+                </div>
+                <div class="email">
+                    <a href="mailto:email@email.com">jdev2016@gmail.com</a>
+                </div>
+            </section>
+            <footer>
+                <p>Jamie Y</p>
+            </footer>
         </div>
-        <header>
-            <h1>Jamie <span class="intro-y">Y</span></h1>
-            <p>Web Developer</p>
-        </header>
-        <section id="about">
-            <h2>About</h2>
-            <div class="about-section">
-                <!--<div class="about-me">-->
-                    <div class="content">
-                          <p>
-                            Hello, I'm Jamie. I'm a Front End Developer. I've been making websites and learning web development for a
-                            while now. My current skills are: HTML5, CSS3, Responsive Web Design,
-                            basic Sass, and basic JavaScript.
-                        </p>
-                        <p>
-                            Since 2015, I have been learning through various free online resources such as codecademy, free code
-                            camp, code school, pluralsight, packt publishing, safari books online, and FlatIron School.
-                        </p>
-                        <p>
-                            I am continuing to learn JavaScript, Sass, and Git/GitHub.
-                        </p>
-                        <p>
-                            I am looking forward to learning other skills such as test-driven JavaScript development and React.
-                        </p>
-                    </div>
-                    <div class="random-facts">
-                        <h3>Want to know more about me?</h3>
-                        <div class="facts"><p class="facts-p">Want to know more about me?</p></div>
-                        <div><button class="button">About Me</button></div>
-                    </div>
-                <!--</div>-->
-            </div><!--about-section-->
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolio">
-                <div class="website">
-                    <div class="img-container"><img src="/images/foodjoy-675.png" alt="" ></div>
-                    <div class="info">
-                        <h3><a href="https://jy16.github.io/foodjoy">FoodJoy</a></h3>
-                        <p>
-                            FoodJoy is a mock cafe website that I created for practice. It is a responsive website that features
-                            a dropdown menu. It is made with HTML5, CSS3 and a little JavaScript.
-                    </div>
-                </div>
-                <hr>
-                <div class="website">
-                    <div class="img-container"><img src="/images/sb-674.png" alt="" ></div>
-                    <div class="info">
-                        <h3><a href="https://jy16.github.io/sweetbakery">Sweet Bakery</a></h3>
-                        <p>
-                            Sweet Bakery is a website that I created for practice. It is a responsive website that has a dropdown menu
-                            and an accordion menu for the bakery menu. It is made with HTML5, CSS3 and a little JavaScript.
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <div class="website">
-                    <div class="img-container"><img src="/images/sg-674.png" alt="" ></div>
-                    <div class="info">
-                        <h3><a href="https://jy16.github.io/sugarsugar">Sugar Sugar</a></h3>
-                        <p>
-                            Sugar Sugar is a blog in-progress. Currently it has only one page. It will be updated and added to as I
-                            learn more. I anticipate that I will run into some difficulties as I continue to develop this blog, such as
-                            adding working forms and changing it from being a static site to one with some interactivity.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section><!--#portfolio-->
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <p><a href="https://twitter.com/jamey_ya">Twitter</a></p>
-                <p><a href="http://www.linkedin.com/in/jamie-y-936539121">linkedIn</a></p>
-                <p><a href="mailto:jdev2016@gmail.com">Email</a></p>
-            </div><!--contact-info-->
-        </section><!--contact-section-->
-        <footer>
-            <p>Jamie Y</p>
-        </footer>
-    </div><!--container-->
-    <script src="js/main.js" type="text/javascript"></script>
-</body>
+    <script src="js/main.js"></script>
+    </body>
 </html>
